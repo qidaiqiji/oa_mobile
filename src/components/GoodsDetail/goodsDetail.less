@@ -1,0 +1,83 @@
+.goodsDeailbox {
+    padding: 0.5rem 0.2rem 0;
+    background: #fff;
+    color: #000;
+    img {
+        vertical-align: top;
+        width: 20%;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    & > div {
+        display: inline-block;
+        width: 76%;
+        & > p {
+            margin-bottom: 0.1rem;
+        }
+        .onlinep {
+            position: relative;
+            margin-bottom: 0.1rem;
+            & > p {
+                & > span:not(:first-child) {
+                    color: #999;
+                    padding-left: 15px;
+                }
+            }
+            & > span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: #999;
+            }
+        }
+        .profit {
+            margin-bottom: 0.1rem;
+        }
+        .price {
+            position: relative;
+            margin-bottom: 0.1rem;
+            & > p {
+                & > span {
+                    width: 80%;
+                    font-weight: bold;
+                }
+            }
+            & > span {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        .line4 {
+            & > p {
+                span:first-child {
+                    color: red;
+                }
+                span:nth-child(2) {
+                    color: orange;
+                }
+                span:nth-child(3) {
+                    color: blue;
+                }
+            }
+        }
+        .line5 {
+            position: relative;
+            margin-bottom: 0.1rem;
+            & > p {
+                span:first-child {
+                    color: orange;
+                }
+                span:nth-child(2) {
+                    color: blue;
+                }
+            }
+            & > span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: #999;
+            }
+        }
+    }
+}
